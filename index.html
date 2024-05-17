@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto</title>
+    <style>
+        .texto {
+            font-size: 14px;
+        }
+        .ref {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 text align="center"><u>DESAFIO DE PROJETO – Primeiros Passos com HTML</u></h1>
+    <hr /><br>
+    <h2 id="índice"><u>ÍNDICE</u></h2>
+
+    <h3>1- Entendendo a Comunicação Client X Server</h3>
+    <ul>
+        <li><a href="#história">História da Web</a></li>
+        <li><a href="#diferença">Qual a Diferença entre Client e Server</a></li>
+        <li><a href="#linguagem">O que é Linguagem de Programação</a></li>
+    </ul>
+
+    <h3>2- Introdução ao HTML</h3>
+    <ul>
+        <li><a href="#tagshtml">O que são Tags HTML e seus Atributos</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+        <li><a href="#links">Links</a></li>
+        <br>
+        <li><a href="#ref">Referências do Conteúdo</a></li>
+    </ul>
+<br>
+    <h4>1- ENTENDENDO A COMUNICAÇÃO CLIENT X SERVER</h4>
+
+    <h5 id="história"><u>HISTÓRIA DA WEB</u></h5>
+    <p class="texto">A história da Web começa inicialmente com os primeiros computadores que surgiram como máquinas de cálculo lógico,
+        devido às necessidades de comunicação durante a Segunda Guerra Mundial.</p>
+    <p class="texto">A Primeira Geração de computadores se inicia “teoricamente” em 1944, quando foi criado o Mark I pelos Estados
+        Unidos. Um computador eletromecânico que realizava diversos cálculos, porém com funcionamento em válvulas
+        possuía um tamanho gigantesco e necessitava de um ambiente bem amplo para ser alocado.</p>
+    <p class="texto">Em 1946 os Alemães criaram o Colossus, com intenção de realizar cálculos que ajudariam na Segunda Guerra Mundial.
+        Em contrapartida também em 1946, os Americanos lançaram o <abbr title="Electronic Numerical Integrator and Computer">ENIAC</abbr>, o primeiro computador eletrônico com
+        funcionamento baseado em válvulas e relés. Por conta disso a “máquina” esquentava muito e atraía insetos que
+        causavam curtos no equipamento, surgindo assim o termo “Bug” (supostamente criado por Grace Murray Hopper).</p>
+    <p class="texto">A Segunda Geração se passou entre os anos de 1959 e 1965, onde as Válvulas foram substituídas pelos Transistores.
+        Essa troca de componentes permitiu que os computadores diminuíssem bastante o seu tamanho físico, podendo assim
+        serem mudados de local com mais facilidade.</p>
+    <p class="texto">Já entre os anos de 1965 e 1970 tivemos a chegada da Terceira Geração, com a criação dos Circuitos Integrados
+        (transistores, capacitores, resistores). Dessa maneira, a diminuição de tamanho físico e aumento de capacidade
+        lógica estavam apenas começando.</p>
+    <p class="texto">Chegando enfim a Quarta Geração que se inicia em 1971 e se estende até os dias atuais, temos além dos Circuitos
+        Integrados, a criação de Microprocessadores e outros tipos de chips e componentes que vem evoluindo através da
+        criação contínua de novos aparelhos eletrônicos e tecnológicos, rumo a Quinta Geração.</p>
+    <p class="texto">Com toda essa evolução dos computadores, tivemos também a invenção da Internet que teve início lá atrás ainda no
+        século XIX, com as primeiras formas de comunicação a distância... Como o Telégrafo (Código Morse) por exemplo.
+    </p>
+    <p class="texto">Em 1958, foi esticado pela primeira vez um cabo submarino entre dois Continentes, estabelecendo uma comunicação
+        em longa distância via cabo físico. Isso devido a Guerra Fria e a Corrida Espacial entre EUA e a antiga URSS na
+        década de 1950. Foi definitivamente a década em que briga pelo poder e sempre chegar à frente do inimigo,
+        decretaram uma grande corrida pela melhor tecnologia.</p>
+    <p class="texto">Para facilitar a troca de informações e temendo ataques soviéticos, o Departamento de Defesa dos Estados
+        Unidos criou a <abbr title="Advanced Research Projects Agency Network">Arpanet</abbr>, a primeira rede de internet. Em 29 de
+        outubro de 1969, estabeleceu-se a primeira conexão entre a Universidade da Califórnia e o Instituto de Pesquisa
+        de Stanford, marcando o envio do primeiro e-mail. <strong>Essa primeira troca de informação foi através de apenas uma
+        palavra, LOGIN... Chegando apenas o “LO”, ou seja, a primeira troca de informação e a primeira falha de
+        comunicação</strong>.</p>
+    <p class="texto">Em 1989, o cientista britânico Tim Berners-Lee desenvolveu a <abbr title="World Wide Web">www</abbr>, a Rede Mundial de
+        Computadores. Embora não tenha inventado a conexão entre computadores geograficamente distantes (como a
+        Arpanet), Berners-Lee criou o modelo que usamos diariamente para acessar a internet. Essa década ficou conhecida
+        como o “boom da internet”, quando ela se popularizou globalmente. Surgiram diversos navegadores, como o Mosaic,
+        Internet Explorer, Netscape, entre outros, e a internet se tornou uma rede global de computadores conectados. A
+        Internet ultrapassou barreiras, aproximando pessoas, culturas, mundos e informações. Hoje, a Internet é
+        essencial para trabalho, pesquisa, diversão, comunicação, educação, informação e até compras de produtos
+        diversos.</p>
+<br>
+    <h5 id="diferença"><u>QUAL A DIFERENÇA ENTRE CLIENT E SERVER</u></h5>
+    <blockquote cite="https://www.controle.net/faq/cliente-servidor-uma-estrutura-para-a-computacao-centralizada">
+        "A estrutura cliente-servidor é um modelo de arquitetura de rede amplamente utilizado em ambientes de TI. Nesta abordagem, os computadores são 
+        divididos <del cite="https://www.controle.net/faq/cliente-servidor-uma-estrutura-para-a-computacao-centralizada" datetime="2024-04-30 14:41">basicamente</del> 
+        em dois grupos: servidores, que fornecem serviços ou recursos, e clientes, que solicitam estes serviços e recursos, recebendo-os como respostas".
+    </blockquote>
+    <p class="texto">O <mark>CLIENT</mark> (ou CLIENTE) é um computador ou qualquer outro dispositivo configurado para utilizar os serviços
+        oferecidos pelo <mark>SERVER</mark> (ou SERVIDOR). Ele faz solicitações ao servidor para obter informações ou executar
+        tarefas. O <mark>CLIENT</mark> não compartilha seus recursos com outros computadores, a não ser que ele permita. Por exemplo,
+        quando acessamos uma página da web, o computador (CLIENT) solicita o conteúdo a partir de um servidor web
+        (SERVER).</p>
+    <p class="texto">O <mark>SERVER</mark>, é nada mais nada menos que um computador configurado em uma rede para oferecer serviços. Ele processa
+        solicitações e fornece recursos ou conteúdo a outros computadores (CLIENTS). Alguns exemplos de servidores
+        seriam servidores web (que hospedam sites), servidores de e-mail, servidores de arquivos e servidores de banco
+        de dados. O servidor compartilha seus recursos (como processamento, armazenamento e largura de banda) com os
+        clientes.</p>
+    <p class="texto">Em resumo, o SERVER é o provedor de serviços, enquanto o CLIENT é aquele que consome esses serviços. Essa
+        comunicação é conhecida como CLIENT-SERVER e é essencial para o funcionamento da INTERNET e de muitas aplicações
+        em redes de computadores.</p>
+<br>
+    <h5 id="linguagem"><u>O QUE É LINGUAGEM DE PROGRAMAÇÃO</u></h5>
+    <p class="texto">Linguagem de programação é um método padronizado para expressar instruções para um computador. Ela consiste em um
+        conjunto de regras sintáticas e semânticas usadas para definir um programa de computador.</p>
+    <p class="texto">Por sua Definição, linguagem de programação é uma linguagem formal que permite que um programador escreva um
+        conjunto de ordens, ações consecutivas, dados e algoritmos. Essas instruções são interpretadas pela máquina,
+        controlando seu comportamento físico e lógico.</p>
+    <p class="texto"><strong>Sendo assim, podemos considerar que a Linguagem de Programação é um sistema de comunicação estruturado, composto
+        por símbolos, palavras-chave e regras que permitem a interação entre programador e máquina. Portanto, são
+        ferramentas essenciais para desenvolver aplicativos digitais e possibilitam a comunicação entre humanos e
+        máquinas</strong>.</p>
+
+    <small><a href="#índice"><b>
+                << Voltar para o Índice</b></a></small>
+
+<br><br><br>
+    <h4>2- INTRODUÇÃO AO HTML</h4>
+
+    <h5 id="tagshtml"><u>O QUE SÃO TAGS HTML E SEUS ATRIBUTOS</u></h5>
+    <p class="texto">As <mark>Tags</mark> são elementos que definem a estrutura e o significado do conteúdo em um documento HTML. Elas são
+        utilizadas para formatar um texto, inserir imagens ou links e muitos outros recursos. Sua função é indicar ao
+        navegador como interpretar o conteúdo de uma página da web. </p>
+    <p class="texto">São encobertas por uma “abertura” e um “fechamento” que a delimitam, com o símbolo “menor que” (
+        < ) para abertura e “maior que, com barra” ( /> ) para fechamento, definindo da seguinte maneira a estrutura que
+        será utilizada: < tag > conteúdo < /tag >. Mas também existem tags que não precisam de fechamento para sua
+                execução
+                e são definidas da seguinte maneira:
+                < tag />.
+    </p>
+    <p class="texto">Já os <mark>Atributos</mark>, são usados para personalizar as Tags, modificando sua estrutura ou funcionalidade através de
+        comandos ou informações específicas dadas a uma Tag. Os Atributos são usados para que a Tag faça tal comando,
+        porém com algum detalhe ou variação específica em relação a Tag original. Sendo assim, eles são utilizados da
+        seguinte forma: < tag atributo=”valor” > conteúdo < /tag >.</p>
+        <br>
+
+        <!--Uso das Tags <sub> e <sup>-->
+        <p class="texto">-- <mark>Teorema de Pitágoras: A<sup>2</sup>+B<sup>2</sup>=C<sup>2</sup>. Fórmula Química da água: H<sub>2</sub>O. 
+            Fórmula Química do Gás Carbônico: CO<sub>2</sub>.</mark><sup><b>*</b></sup></p>
+<br>
+    <p><b><i><u>Para finalizar, citarei 5 exemplos de Tags abaixo:</u></i></b></p>
+
+    <ol>
+        <li id="textos"><b>TEXTOS -</b> Tag "p" entre os sinais < >, fechando com "/p";</li>
+        <li id="listas"><b>LISTA ORDENADA -</b> Tag "ol" entre os sinais < >, fechando com "/ol";</li>
+        <li><b>LISTA NÃO ORDENADA -</b> Tag "ul" entre os sinais < >, fechando com "/ul";</li>
+        <li><b>ITENS DA LISTA -</b> Tag "li" entre os sinais < >, fechando com "/li";</li>
+        <li id="links"><b>LINKS -</b> Tag "a + atributo = "valor" " entre os sinais < >, fechando com "/a".</li>
+    </ol>
+
+    <small><a href="#índice"><b>
+                << Voltar para o Índice</b></a></small>
+<br><br><br>
+                <small><b><sup>*</sup>Esse parágrafo foi inserido no Projeto "Apenas para Fins de Entendimento e Compreensão" das Tags < sup > e < sub >.</small>
+    <br><br><hr />
+    <h6 id="ref"><u><b><i>REFERÊNCIAS:</i></b></u></h6>
+    <ul>
+        <li class="ref"><a href="https://brasilescola.uol.com.br/informatica/internet.htm" target="_blank">Site Brasil Escola</a>
+        </li>
+        <li class="ref"><a href="https://www.controle.net/faq/cliente-servidor-uma-estrutura-para-a-computacao-centralizada"
+                target="_blank">Controle.Net</a></li>
+        <li class="ref"><a href="https://medium.com/technroses/html-tags-elementos-e-atributos-77723a98a7d3"
+                target="_blank">Medium.Com</a></li>
+    </ul>
+
+</body>
+
+</html>
